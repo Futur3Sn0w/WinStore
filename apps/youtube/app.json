@@ -3,7 +3,6 @@
   "name": "YouTube",
   "description": "Watch videos, browse Shorts, and manage your subscriptions with the YouTube app. Features a custom bottom navigation bar for quick access to Home, Shorts, Subscriptions, and Library.",
   "version": "1.0.0",
-  "icon": "mif-youtube",
   "color": "red",
   "category": "video",
   "type": "modern",
