@@ -12,6 +12,10 @@
     {
       "id": "mini-crossword",
       "manifestUrl": "apps/mini-crossword/app.json"
+    },
+    {
+      "id": "youtube",
+      "manifestUrl": "apps/youtube/app.json"
     }
   ]
 }
