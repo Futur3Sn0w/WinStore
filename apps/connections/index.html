@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connections</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background: #111;
+            overflow: hidden;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #fff;
+        }
+
+        #shell {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        #loading {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            background: linear-gradient(180deg, #1b1b1b 0%, #0d0d0d 100%);
+            z-index: 1;
+            transition: opacity 180ms ease;
+        }
+
+        #loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 46px;
+            height: 46px;
+            border: 4px solid rgba(255, 255, 255, 0.12);
+            border-top-color: #ffffff;
+            border-radius: 50%;
+            animation: spin 900ms linear infinite;
+        }
+
+        #status {
+            font-size: 15px;
+            opacity: 0.88;
+        }
+
+        webview {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="shell">
+        <div id="loading">
+            <div class="spinner" aria-hidden="true"></div>
+            <div id="status">Loading Connections...</div>
+        </div>
+        <webview id="game-view" allowpopups disablewebsecurity></webview>
+    </div>
+
+    <script>
+        const loading = document.getElementById('loading');
+        const status = document.getElementById('status');
+        const webview = document.getElementById('game-view');
+
+        webview.setAttribute('partition', 'persist:nytgames');
+        webview.setAttribute('src', 'https://www.nytimes.com/games/connections');
+
+        webview.addEventListener('did-finish-load', () => {
+            loading.classList.add('hidden');
+        });
+
+        webview.addEventListener('did-fail-load', event => {
+            if (event.errorCode === -3) return;
+            status.textContent = `Failed to load: ${event.errorDescription}`;
+            loading.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>

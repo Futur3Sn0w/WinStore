@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "apps": [
+    {
+      "id": "connections",
+      "manifestUrl": "apps/connections/app.json"
+    },
+    {
+      "id": "strands",
+      "manifestUrl": "apps/strands/app.json"
+    },
+    {
+      "id": "mini-crossword",
+      "manifestUrl": "apps/mini-crossword/app.json"
+    }
+  ]
+}
