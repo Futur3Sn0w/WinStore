@@ -16,6 +16,14 @@
     {
       "id": "youtube",
       "manifestUrl": "apps/youtube/app.json"
+    },
+    {
+      "id": "the-midi",
+      "manifestUrl": "apps/the-midi/app.json"
+    },
+    {
+      "id": "pips",
+      "manifestUrl": "apps/pips/app.json"
     }
   ]
 }
