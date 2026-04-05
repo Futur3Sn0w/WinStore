@@ -1,7 +1,7 @@
 {
   "id": "youtube",
   "name": "YouTube",
-  "description": "Watch videos, browse Shorts, and manage your subscriptions with the YouTube app. Features a custom bottom navigation bar for quick access to Home, Shorts, Subscriptions, and Library.",
+  "description": "Watch videos, browse Shorts, and manage your subscriptions with the YouTube app.",
   "version": "1.0.0",
   "color": "red",
   "category": "video",
@@ -21,6 +21,60 @@
   "tileOptions": {
     "allowWide": true,
     "allowLarge": true
+  },
+  "appbar": {
+    "commands": [
+      {
+        "id": "back",
+        "label": "Back",
+        "icon": "<svg viewBox=\"0 0 24 24\"><path d=\"M20 11H7.83l5.59-5.59L12 3l-9 9 9 9 1.41-1.41L7.83 13H20v-2z\"/></svg>",
+        "action": "history-back"
+      },
+      {
+        "id": "forward",
+        "label": "Forward",
+        "icon": "<svg viewBox=\"0 0 24 24\"><path d=\"M12 3l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 21l9-9-9-9z\"/></svg>",
+        "action": "history-forward"
+      },
+      {
+        "id": "home",
+        "label": "Home",
+        "icon": "<svg viewBox=\"0 0 24 24\"><path d=\"M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z\"/></svg>",
+        "action": "navigate",
+        "url": "https://www.youtube.com/",
+        "urlMatch": "youtube\\.com\\/(?!shorts|feed)"
+      },
+      {
+        "id": "shorts",
+        "label": "Shorts",
+        "icon": "<svg viewBox=\"0 0 24 24\"><path d=\"M7 2H4c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h3c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 10H4c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h3c1.1 0 2-.9 2-2v-3c0-1.1-.9-2-2-2zm10-10h-3c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h3c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 10h-3c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h3c1.1 0 2-.9 2-2v-3c0-1.1-.9-2-2-2z\"/></svg>",
+        "action": "navigate",
+        "url": "https://www.youtube.com/shorts",
+        "urlMatch": "youtube\\.com\\/shorts"
+      },
+      {
+        "id": "subscriptions",
+        "label": "Subs",
+        "icon": "<svg viewBox=\"0 0 24 24\"><path d=\"M16 4H2v12h14V4zm2-2v16H0V2h18zm5 9h-5V9h5v2z\"/></svg>",
+        "action": "navigate",
+        "url": "https://www.youtube.com/feed/subscriptions",
+        "urlMatch": "youtube\\.com\\/feed\\/subscriptions"
+      },
+      {
+        "id": "library",
+        "label": "Library",
+        "icon": "<svg viewBox=\"0 0 24 24\"><path d=\"M4 6h12v2H4zm10 9H4v2h10zm6-9v8h2V6zm-2.5 4h5v2h-5z\"/></svg>",
+        "action": "navigate",
+        "url": "https://www.youtube.com/feed/library",
+        "urlMatch": "youtube\\.com\\/feed\\/(library|you)"
+      },
+      {
+        "id": "refresh",
+        "label": "Refresh",
+        "icon": "<svg viewBox=\"0 0 24 24\"><path d=\"M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z\"/></svg>",
+        "action": "refresh"
+      }
+    ]
   },
   "files": [
     "index.html",

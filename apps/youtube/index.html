@@ -1,253 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube</title>
-    <style>
-        :root {
-            --youtube-red: #cc0000;
-            --youtube-bar-height: 76px;
-            --youtube-bar-bg: #000;
-            --youtube-bar-bg-bottom: #000;
-            --youtube-bar-border: rgba(255, 255, 255, 0.22);
-            --youtube-bar-ink: #fff;
-            --youtube-bar-hover: rgba(255, 255, 255, 0.12);
-            --youtube-bar-active: #fff;
-            --youtube-bar-pressed: rgba(255, 255, 255, 0.82);
-            --youtube-bar-active-ink: #000;
-        }
+<style>
+:root {
+  --youtube-red: #cc0000;
+}
 
-        body {
-            margin: 0;
-            background: #000;
-            color: #fff;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            overflow: hidden;
-        }
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
 
-        #youtube-app {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background: #000;
-            overflow: hidden;
-        }
+#youtube-app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
 
-        #youtube-view {
-            position: absolute;
-            inset: 0 0 var(--youtube-bar-height) 0;
-            width: 100%;
-            height: calc(100% - var(--youtube-bar-height));
-            border: none;
-            background: #000;
-        }
+#youtube-view {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: #000;
+}
 
-        #youtube-loading {
-            position: absolute;
-            inset: 0 0 var(--youtube-bar-height) 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 18px;
-            background:
-                radial-gradient(circle at top, rgba(204, 0, 0, 0.22), transparent 40%),
-                linear-gradient(180deg, #101010 0%, #000 100%);
-            z-index: 20;
-            transition: opacity 0.2s ease;
-        }
+#youtube-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+  background: radial-gradient(circle at top, rgba(204, 0, 0, 0.22), transparent 40%), linear-gradient(180deg, #101010 0%, #000 100%);
+  z-index: 20;
+  transition: opacity 0.2s ease;
+}
 
-        #youtube-loading.hidden {
-            opacity: 0;
-            pointer-events: none;
-        }
+#youtube-loading.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
-        .youtube-spinner {
-            width: 54px;
-            height: 54px;
-            border-radius: 50%;
-            border: 4px solid rgba(255, 255, 255, 0.12);
-            border-top-color: var(--youtube-red);
-            animation: youtube-spin 1s linear infinite;
-        }
+.youtube-spinner {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.12);
+  border-top-color: var(--youtube-red);
+  animation: youtube-spin 1s linear infinite;
+}
 
-        .youtube-loading-title {
-            font-size: 18px;
-            font-weight: 600;
-            letter-spacing: 0.02em;
-        }
+.youtube-loading-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
 
-        .youtube-loading-status {
-            font-size: 12px;
-            opacity: 0.75;
-        }
+.youtube-loading-status {
+  font-size: 12px;
+  opacity: 0.75;
+}
 
-        @keyframes youtube-spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        .youtube-app-bar {
-            min-height: var(--youtube-bar-height);
-            height: var(--youtube-bar-height);
-            box-sizing: border-box;
-            border-top-color: var(--youtube-bar-border);
-            background: linear-gradient(180deg, var(--youtube-bar-bg) 0%, var(--youtube-bar-bg-bottom) 100%);
-        }
-
-        .youtube-app-bar .modern-webview-bar-controls {
-            align-items: center;
-            justify-content: space-evenly;
-            gap: 6px;
-            height: var(--youtube-bar-height);
-            padding: 0 12px;
-        }
-
-        .youtube-app-bar .modern-webview-bar-btn {
-            flex: 1 1 0;
-            min-width: 0;
-            max-width: 76px;
-            height: 60px;
-            padding: 0 2px;
-            border: none;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 7px;
-            color: var(--youtube-bar-ink);
-            background: transparent;
-        }
-
-        .youtube-app-bar .modern-webview-bar-btn-icon {
-            width: 42px;
-            height: 42px;
-            border: 2px solid currentColor;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: transparent;
-            box-sizing: border-box;
-            transition:
-                background-color 0.16s ease,
-                border-color 0.16s ease,
-                color 0.16s ease,
-                transform 0.12s ease;
-        }
-
-        .youtube-app-bar .modern-webview-bar-btn:hover:not(:disabled) .modern-webview-bar-btn-icon {
-            background: var(--youtube-bar-hover);
-        }
-
-        .youtube-app-bar .modern-webview-bar-btn:hover:not(:disabled),
-        .youtube-app-bar .modern-webview-bar-btn:active:not(:disabled) {
-            background: transparent;
-            color: var(--youtube-bar-ink);
-        }
-
-        .youtube-app-bar .modern-webview-bar-btn.active .modern-webview-bar-btn-icon {
-            background: var(--youtube-bar-active);
-            color: var(--youtube-bar-active-ink);
-        }
-
-        .youtube-app-bar .modern-webview-bar-btn:active:not(:disabled) .modern-webview-bar-btn-icon {
-            background: var(--youtube-bar-pressed);
-            transform: scale(0.96);
-        }
-
-        .youtube-app-bar .modern-webview-bar-btn:disabled {
-            opacity: 0.3;
-            cursor: default;
-        }
-
-        .youtube-app-bar .modern-webview-bar-btn svg {
-            width: 19px;
-            height: 19px;
-            display: block;
-            fill: currentColor;
-        }
-
-        .youtube-app-bar .modern-webview-bar-btn-label {
-            position: static;
-            transform: none;
-            width: auto;
-            opacity: 1;
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 0.01em;
-            color: inherit !important;
-            line-height: 1;
-        }
-    </style>
+@keyframes youtube-spin {
+  to { transform: rotate(360deg); }
+}
+</style>
 </head>
 <body>
-    <div id="youtube-app">
-        <div id="youtube-loading">
-            <div class="youtube-spinner"></div>
-            <div class="youtube-loading-title">Loading YouTube...</div>
-            <div class="youtube-loading-status" id="youtube-loading-status">Starting webview session</div>
-        </div>
-
-        <webview id="youtube-view"
-                 src="https://www.youtube.com/"
-                 partition="persist:youtube"
-                 allowpopups
-                 nodeintegration="false"
-                 disablewebsecurity
-                 webpreferences="nativeWindowOpen=yes">
-        </webview>
-
-        <div class="modern-webview-bar youtube-app-bar expanded" id="youtube-app-bar">
-            <div class="modern-webview-bar-controls">
-                <button class="modern-webview-bar-btn" data-action="back" title="Back" disabled>
-                    <span class="modern-webview-bar-btn-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.8 5 8 12l6.8 7 1.4-1.4L10.8 12l5.4-5.6z"/></svg>
-                    </span>
-                    <div class="modern-webview-bar-btn-label">Back</div>
-                </button>
-                <button class="modern-webview-bar-btn" data-action="forward" title="Forward" disabled>
-                    <span class="modern-webview-bar-btn-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.2 5-1.4 1.4 5.4 5.6-5.4 5.6L9.2 19 16 12z"/></svg>
-                    </span>
-                    <div class="modern-webview-bar-btn-label">Forward</div>
-                </button>
-                <button class="modern-webview-bar-btn active" data-route="home" data-url="https://www.youtube.com/" title="Home" aria-current="page">
-                    <span class="modern-webview-bar-btn-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4 3 10.5V21h6.4v-5.8h5.2V21H21V10.5z"/></svg>
-                    </span>
-                    <div class="modern-webview-bar-btn-label">Home</div>
-                </button>
-                <button class="modern-webview-bar-btn" data-route="shorts" data-url="https://www.youtube.com/shorts" title="Shorts">
-                    <span class="modern-webview-bar-btn-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.7 4.3c1.7-1 3.9.2 3.9 2.2v1.5l1.2-.7c1.7-1 3.9.2 3.9 2.2v5c0 1-.5 1.9-1.3 2.5l-4.9 2.8c-1.7 1-3.9-.2-3.9-2.2v-1.5l-1.2.7c-1.7 1-3.9-.2-3.9-2.2v-5c0-1 .5-1.9 1.3-2.5z"/></svg>
-                    </span>
-                    <div class="modern-webview-bar-btn-label">Shorts</div>
-                </button>
-                <button class="modern-webview-bar-btn" data-route="subscriptions" data-url="https://www.youtube.com/feed/subscriptions" title="Subscriptions">
-                    <span class="modern-webview-bar-btn-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 7.5h11v9H10zM3 9.5h4v5H3zm6.5-6 2.3 2.3L14 3.5l2.2 2.3 2.3-2.3L21 5.8l-2.3 2.4H7.2L5 5.8z"/></svg>
-                    </span>
-                    <div class="modern-webview-bar-btn-label">Subs</div>
-                </button>
-                <button class="modern-webview-bar-btn" data-route="library" data-url="https://www.youtube.com/feed/library" title="Library">
-                    <span class="modern-webview-bar-btn-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h3v14H4zm5 0h11v3H9zm0 5h11v3H9zm0 5h11v3H9z"/></svg>
-                    </span>
-                    <div class="modern-webview-bar-btn-label">Library</div>
-                </button>
-                <button class="modern-webview-bar-btn" data-action="refresh" title="Refresh">
-                    <span class="modern-webview-bar-btn-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.7 6.3A8 8 0 1 0 20 12h-2.5a5.5 5.5 0 1 1-1.6-3.9L13 11h8V3z"/></svg>
-                    </span>
-                    <div class="modern-webview-bar-btn-label">Refresh</div>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <script src="youtube.js"></script>
+<div id="youtube-app">
+  <div id="youtube-loading">
+    <div class="youtube-spinner"></div>
+    <div class="youtube-loading-title">Loading YouTube...</div>
+    <div id="youtube-loading-status" class="youtube-loading-status">Starting webview session</div>
+  </div>
+  <webview id="youtube-view" src="https://www.youtube.com/" partition="persist:youtube" allowpopups nodeintegration="false" disablewebsecurity></webview>
+</div>
+<script src="youtube.js"></script>
 </body>
 </html>
