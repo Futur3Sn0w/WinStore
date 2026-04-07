@@ -52,6 +52,22 @@
     {
       "id": "discord",
       "manifestUrl": "apps/discord/app.json"
+    },
+    {
+      "id": "word",
+      "manifestUrl": "apps/word/app.json"
+    },
+    {
+      "id": "excel",
+      "manifestUrl": "apps/excel/app.json"
+    },
+    {
+      "id": "powerpoint",
+      "manifestUrl": "apps/powerpoint/app.json"
+    },
+    {
+      "id": "onenote",
+      "manifestUrl": "apps/onenote/app.json"
     }
   ]
 }
