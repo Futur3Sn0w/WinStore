@@ -87,13 +87,6 @@
     "index.html",
     "youtube.js",
     "resources/logo.png",
-    "resources/tiletiny.scale-80.png",
-    "resources/tiletiny.scale-100.png",
-    "resources/tilesmall.scale-80.png",
-    "resources/tilesmall.scale-100.png",
-    "resources/tilewide.scale-80.png",
-    "resources/tilewide.scale-100.png",
-    "resources/tilelarge.scale-80.png",
-    "resources/tilelarge.scale-100.png"
+    "resources/logo.svg"
   ]
 }
