@@ -3,6 +3,7 @@
   "name": "Strands",
   "description": "Uncover the hidden theme by finding related words in this word search puzzle from The New York Times. Every letter on the board is used in one of the answers!",
   "version": "1.0.0",
+  "publisher": "The New York Times",
   "icon": "mif-link",
   "color": "blue",
   "category": "games",

@@ -3,6 +3,7 @@
   "name": "The Mini",
   "description": "Quick daily crossword puzzle from The New York Times that can be solved in minutes. A perfect bite-sized brain teaser for your day.",
   "version": "1.0.0",
+  "publisher": "The New York Times",
   "icon": "mif-apps",
   "color": "green",
   "category": "games",

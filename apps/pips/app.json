@@ -3,6 +3,7 @@
   "name": "Pips",
   "description": "Roll the dice and make strategic moves in this daily puzzle game from The New York Times.",
   "version": "1.0.0",
+  "publisher": "The New York Times",
   "icon": "mif-dice",
   "color": "red",
   "category": "games",
