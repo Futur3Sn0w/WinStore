@@ -3,6 +3,7 @@
   "name": "YouTube",
   "description": "Watch videos, browse Shorts, and manage your subscriptions with the YouTube app.",
   "version": "1.0.0",
+  "releaseDate": "2026-03-22",
   "publisher": "Google LLC",
   "color": "grey",
   "category": "video",

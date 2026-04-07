@@ -3,6 +3,7 @@
   "name": "Connections",
   "description": "Find the connection between words in this daily puzzle game from The New York Times. Group 16 words into four categories — but watch out for tricky red herrings!",
   "version": "1.0.0",
+  "releaseDate": "2026-03-22",
   "publisher": "The New York Times",
   "icon": "mif-table",
   "color": "purple",

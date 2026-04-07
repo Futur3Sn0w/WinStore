@@ -4,6 +4,7 @@
   "description": "Create and edit spreadsheets, analyze data with charts and formulas, and share workbooks with others — all from your browser via OneDrive.",
   "publisher": "Microsoft Corporation",
   "version": "1.0.0",
+  "releaseDate": "2026-04-06",
   "icon": "mif-excel",
   "color": "green",
   "category": "productivity",

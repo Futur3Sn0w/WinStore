@@ -4,6 +4,7 @@
   "description": "Stream music, videos, and podcasts from YouTube's catalog. Get personalized recommendations, browse charts, and access your library across devices.",
   "publisher": "Google LLC",
   "version": "1.0.0",
+  "releaseDate": "2026-04-06",
   "icon": "mif-music",
   "color": "grey",
   "category": "music",

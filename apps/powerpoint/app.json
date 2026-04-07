@@ -4,6 +4,7 @@
   "description": "Design and present polished slideshows with the full PowerPoint experience in your browser. Create, edit, and share presentations from OneDrive.",
   "publisher": "Microsoft Corporation",
   "version": "1.0.0",
+  "releaseDate": "2026-04-06",
   "icon": "mif-powerpoint",
   "color": "orange",
   "category": "productivity",

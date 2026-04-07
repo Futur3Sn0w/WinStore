@@ -4,6 +4,7 @@
   "description": "A full-featured code editor running entirely in your browser. Open local and remote repositories, edit code with IntelliSense, and use extensions — powered by vscode.dev.",
   "publisher": "Microsoft Corporation",
   "version": "1.0.0",
+  "releaseDate": "2026-04-06",
   "icon": "mif-code",
   "color": "blue",
   "category": "tools",

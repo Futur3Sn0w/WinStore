@@ -4,6 +4,7 @@
   "description": "Create, edit, and share documents with the full Word experience in your browser. Access your files from OneDrive and collaborate in real time.",
   "publisher": "Microsoft Corporation",
   "version": "1.0.0",
+  "releaseDate": "2026-04-06",
   "icon": "mif-word",
   "color": "blue",
   "category": "productivity",

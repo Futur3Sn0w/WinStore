@@ -4,6 +4,7 @@
   "description": "A powerful online photo editor with full support for PSD, XCF, Sketch, and other formats. Edit photos, create designs, and work with layers — all in your browser.",
   "publisher": "Photopea",
   "version": "1.0.0",
+  "releaseDate": "2026-04-06",
   "icon": "mif-image",
   "color": "teal",
   "category": "photo",

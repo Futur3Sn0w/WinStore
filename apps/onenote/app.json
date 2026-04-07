@@ -4,6 +4,7 @@
   "description": "Capture notes, ideas, and to-dos in a free-form digital notebook. Organize pages and notebooks, insert images and files, and sync across devices via OneDrive.",
   "publisher": "Microsoft Corporation",
   "version": "1.0.0",
+  "releaseDate": "2026-04-06",
   "icon": "mif-onenote",
   "color": "purple",
   "category": "productivity",

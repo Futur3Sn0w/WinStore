@@ -4,6 +4,7 @@
   "description": "Listen to music and podcasts. Browse artist pages, curated playlists, and personalized mixes from Spotify's catalog of over 100 million tracks.",
   "publisher": "Spotify AB",
   "version": "1.0.0",
+  "releaseDate": "2026-04-06",
   "icon": "mif-music",
   "color": "green",
   "category": "music",
