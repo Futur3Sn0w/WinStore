@@ -1,0 +1,34 @@
+{
+  "id": "figma",
+  "name": "Figma",
+  "description": "Collaborative interface design tool for teams. Create wireframes, prototypes, and production-ready designs with real-time multiplayer editing.",
+  "publisher": "Figma, Inc.",
+  "version": "1.0.0",
+  "icon": "mif-vector",
+  "color": "purple",
+  "category": "productivity",
+  "type": "modern",
+  "size": "normal",
+  "webview": {
+    "enabled": true,
+    "url": "https://www.figma.com",
+    "partition": "persist:figma"
+  },
+  "requirements": {
+    "installMode": "remote",
+    "internet": true,
+    "minVersion": "1.0"
+  },
+  "windowOptions": {
+    "minimizable": true,
+    "showIcon": true
+  },
+  "tileOptions": {
+    "allowWide": false,
+    "allowLarge": false
+  },
+  "files": [
+    "resources/logo.svg",
+    "resources/logo.png"
+  ]
+}

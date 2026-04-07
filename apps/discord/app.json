@@ -1,0 +1,34 @@
+{
+  "id": "discord",
+  "name": "Discord",
+  "description": "Chat, call, and hang out with your communities. Create servers, join voice channels, and message friends — the full Discord experience in your browser.",
+  "publisher": "Discord Inc.",
+  "version": "1.0.0",
+  "icon": "mif-chat",
+  "color": "purple",
+  "category": "social",
+  "type": "modern",
+  "size": "normal",
+  "webview": {
+    "enabled": true,
+    "url": "https://discord.com/app",
+    "partition": "persist:discord"
+  },
+  "requirements": {
+    "installMode": "remote",
+    "internet": true,
+    "minVersion": "1.0"
+  },
+  "windowOptions": {
+    "minimizable": true,
+    "showIcon": true
+  },
+  "tileOptions": {
+    "allowWide": false,
+    "allowLarge": false
+  },
+  "files": [
+    "resources/logo.svg",
+    "resources/logo.png"
+  ]
+}

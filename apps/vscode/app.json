@@ -1,0 +1,34 @@
+{
+  "id": "vscode",
+  "name": "Visual Studio Code",
+  "description": "A full-featured code editor running entirely in your browser. Open local and remote repositories, edit code with IntelliSense, and use extensions — powered by vscode.dev.",
+  "publisher": "Microsoft Corporation",
+  "version": "1.0.0",
+  "icon": "mif-code",
+  "color": "blue",
+  "category": "tools",
+  "type": "modern",
+  "size": "normal",
+  "webview": {
+    "enabled": true,
+    "url": "https://vscode.dev",
+    "partition": "persist:vscode"
+  },
+  "requirements": {
+    "installMode": "remote",
+    "internet": true,
+    "minVersion": "1.0"
+  },
+  "windowOptions": {
+    "minimizable": true,
+    "showIcon": true
+  },
+  "tileOptions": {
+    "allowWide": false,
+    "allowLarge": false
+  },
+  "files": [
+    "resources/logo.svg",
+    "resources/logo.png"
+  ]
+}

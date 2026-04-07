@@ -24,6 +24,34 @@
     {
       "id": "pips",
       "manifestUrl": "apps/pips/app.json"
+    },
+    {
+      "id": "photopea",
+      "manifestUrl": "apps/photopea/app.json"
+    },
+    {
+      "id": "apple-music",
+      "manifestUrl": "apps/apple-music/app.json"
+    },
+    {
+      "id": "spotify",
+      "manifestUrl": "apps/spotify/app.json"
+    },
+    {
+      "id": "youtube-music",
+      "manifestUrl": "apps/youtube-music/app.json"
+    },
+    {
+      "id": "figma",
+      "manifestUrl": "apps/figma/app.json"
+    },
+    {
+      "id": "vscode",
+      "manifestUrl": "apps/vscode/app.json"
+    },
+    {
+      "id": "discord",
+      "manifestUrl": "apps/discord/app.json"
     }
   ]
 }

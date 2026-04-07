@@ -1,0 +1,34 @@
+{
+  "id": "photopea",
+  "name": "Photopea",
+  "description": "A powerful online photo editor with full support for PSD, XCF, Sketch, and other formats. Edit photos, create designs, and work with layers — all in your browser.",
+  "publisher": "Photopea",
+  "version": "1.0.0",
+  "icon": "mif-image",
+  "color": "teal",
+  "category": "photo",
+  "type": "modern",
+  "size": "normal",
+  "webview": {
+    "enabled": true,
+    "url": "https://www.photopea.com",
+    "partition": "persist:photopea"
+  },
+  "requirements": {
+    "installMode": "remote",
+    "internet": true,
+    "minVersion": "1.0"
+  },
+  "windowOptions": {
+    "minimizable": true,
+    "showIcon": true
+  },
+  "tileOptions": {
+    "allowWide": false,
+    "allowLarge": false
+  },
+  "files": [
+    "resources/logo.svg",
+    "resources/logo.png"
+  ]
+}

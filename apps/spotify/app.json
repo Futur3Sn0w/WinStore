@@ -1,0 +1,34 @@
+{
+  "id": "spotify",
+  "name": "Spotify",
+  "description": "Listen to music and podcasts. Browse artist pages, curated playlists, and personalized mixes from Spotify's catalog of over 100 million tracks.",
+  "publisher": "Spotify AB",
+  "version": "1.0.0",
+  "icon": "mif-music",
+  "color": "green",
+  "category": "music",
+  "type": "modern",
+  "size": "normal",
+  "webview": {
+    "enabled": true,
+    "url": "https://open.spotify.com",
+    "partition": "persist:spotify"
+  },
+  "requirements": {
+    "installMode": "remote",
+    "internet": true,
+    "minVersion": "1.0"
+  },
+  "windowOptions": {
+    "minimizable": true,
+    "showIcon": true
+  },
+  "tileOptions": {
+    "allowWide": false,
+    "allowLarge": false
+  },
+  "files": [
+    "resources/logo.svg",
+    "resources/logo.png"
+  ]
+}
