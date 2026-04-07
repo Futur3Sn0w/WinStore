@@ -87,7 +87,6 @@
   "files": [
     "index.html",
     "youtube.js",
-    "resources/logo.png",
     "resources/logo.svg"
   ]
 }
