@@ -3,7 +3,7 @@
   "name": "YouTube",
   "description": "Watch videos, browse Shorts, and manage your subscriptions with the YouTube app.",
   "version": "1.0.0",
-  "color": "red",
+  "color": "grey",
   "category": "video",
   "type": "modern",
   "size": "normal",
