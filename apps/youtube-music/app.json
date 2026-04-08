@@ -28,6 +28,22 @@
     "allowWide": false,
     "allowLarge": false
   },
+  "screenshots": [
+    "https://chromeunboxed.com/wp-content/uploads/2024/06/YouTubeMusicNewLayout.jpg",
+    "https://preview.redd.it/new-youtube-desktop-ui-v0-0kcqwvzj88cb1.jpg?auto=webp&s=b33d27e9ab77d70312d9b3e0b3e8c069a6af511c",
+    "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/03/youtube-music-web-player-redesign-2.jpg?ssl=1"
+  ],
+  "storeInfo": {
+    "price": "Free",
+    "size": "Varies",
+    "ageRating": "12+",
+    "copyright": "© Google LLC",
+    "rating": 4.0,
+    "totalRatings": 0,
+    "ratingBreakdown": [],
+    "totalReviews": 0
+  },
+  "reviews": [],
   "files": [
     "resources/logo.svg",
     "resources/logo.png"

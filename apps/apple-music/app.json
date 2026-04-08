@@ -28,6 +28,23 @@
     "allowWide": false,
     "allowLarge": false
   },
+  "screenshots": [
+    "https://cdn.macstories.net/001/4ec99907-d17b-4329-899e-ae65ca6170eb.jpeg",
+    "https://cdn.redmondpie.com/wp-content/uploads/2019/09/apple-music-web-beta-1200px.jpg",
+    "https://ipcdn-web.apple.com/assets/v2/web/e5194a88-7329-4759-a1b7-fb2a4d268384",
+    "https://cdn.mos.cms.futurecdn.net/d6HkUgRpLhJsJSBoMyHtJK.jpg"
+  ],
+  "storeInfo": {
+    "price": "Free",
+    "size": "Varies",
+    "ageRating": "12+",
+    "copyright": "© Apple Inc.",
+    "rating": 4.0,
+    "totalRatings": 0,
+    "ratingBreakdown": [],
+    "totalReviews": 0
+  },
+  "reviews": [],
   "files": [
     "resources/logo.svg",
     "resources/logo.png"

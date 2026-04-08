@@ -28,6 +28,22 @@
     "allowWide": false,
     "allowLarge": false
   },
+  "screenshots": [
+    "https://www.thetraininglady.com/wp-content/uploads/2024/02/onenote-online-1.png",
+    "https://www.thetraininglady.com/wp-content/uploads/2024/02/onenote-online-3.png",
+    "https://quisitive.com/wp-content/uploads/2025/05/image-2.png"
+  ],
+  "storeInfo": {
+    "price": "Free",
+    "size": "Varies",
+    "ageRating": "12+",
+    "copyright": "© Microsoft Corporation",
+    "rating": 4.0,
+    "totalRatings": 0,
+    "ratingBreakdown": [],
+    "totalReviews": 0
+  },
+  "reviews": [],
   "appbar": {
     "commands": [
       {

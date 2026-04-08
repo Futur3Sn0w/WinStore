@@ -25,6 +25,22 @@
     "minimizable": true,
     "showIcon": true
   },
+  "screenshots": [
+    "https://www.poynter.org/wp-content/uploads/2021/10/Screen-Shot-2021-10-05-at-2.52.51-PM.png",
+    "https://imageio.forbes.com/specials-images/imageserve/66a443f5e74a26761c258a2c/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds",
+    "https://imageio.forbes.com/specials-images/imageserve/678335a084dfeb7327eb22de/mini4/0x0.png?height=403&width=480&fit=bounds"
+  ],
+  "storeInfo": {
+    "price": "Free",
+    "size": "Varies",
+    "ageRating": "12+",
+    "copyright": "© The New York Times",
+    "rating": 4.0,
+    "totalRatings": 0,
+    "ratingBreakdown": [],
+    "totalReviews": 0
+  },
+  "reviews": [],
   "files": [
     "index.html",
     "resources/logo.svg"

@@ -25,6 +25,22 @@
     "minimizable": true,
     "showIcon": true
   },
+  "screenshots": [
+    "https://cdn.mos.cms.futurecdn.net/ACyuADLdz3Nu7VXfRq9sB7.jpg",
+    "https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2024/03/new-york-times-connections-complete.jpg",
+    "https://helios-i.mashable.com/imagery/articles/03Iw4Y94Jz6B6a2k3OTZd3O/hero-image.fill.size_1248x702.v1711982581.png"
+  ],
+  "storeInfo": {
+    "price": "Free",
+    "size": "Varies",
+    "ageRating": "12+",
+    "copyright": "© The New York Times",
+    "rating": 4.0,
+    "totalRatings": 0,
+    "ratingBreakdown": [],
+    "totalReviews": 0
+  },
+  "reviews": [],
   "files": [
     "index.html",
     "resources/logo.svg"

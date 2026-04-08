@@ -28,6 +28,22 @@
     "allowWide": false,
     "allowLarge": false
   },
+  "screenshots": [
+    "https://code.visualstudio.com/assets/blogs/2021/10/20/vscode-dev.png",
+    "https://code.visualstudio.com/assets/docs/setup/vscode-web/remote-repositories.png",
+    "https://learn.microsoft.com/en-us/power-pages/configure/media/visual-studio-code-editor/vscode-file-explorer.png"
+  ],
+  "storeInfo": {
+    "price": "Free",
+    "size": "Varies",
+    "ageRating": "12+",
+    "copyright": "© Microsoft Corporation",
+    "rating": 4.0,
+    "totalRatings": 0,
+    "ratingBreakdown": [],
+    "totalReviews": 0
+  },
+  "reviews": [],
   "files": [
     "resources/logo.svg",
     "resources/logo.png"

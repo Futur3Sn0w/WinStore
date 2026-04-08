@@ -25,6 +25,22 @@
     "url": "https://www.nytimes.com/games/midi",
     "partition": "persist:nytgames"
   },
+  "screenshots": [
+    "https://www.cnet.com/a/img/resize/0812338c1fe689c4573f546292507203af2826b0/hub/2026/02/26/7ffc05b2-f931-4fb0-afe3-fe5ecc0d3fa7/midi-crossword-nyt.png?auto=webp&fit=crop&height=900&width=1200",
+    "https://static01.nyt.com/images/2026/03/01/crosswords/01gumball-midi-overlay/01gumball-midi-overlay-articleLarge.png?quality=75&auto=webp&disable=upscale",
+    "https://static.beebom.com/puzzle/wp-content/uploads/sites/2/2026/03/NYT-Midi-Crossword-1.jpg?w=1024"
+  ],
+  "storeInfo": {
+    "price": "Free",
+    "size": "Varies",
+    "ageRating": "12+",
+    "copyright": "© The New York Times",
+    "rating": 4.0,
+    "totalRatings": 0,
+    "ratingBreakdown": [],
+    "totalReviews": 0
+  },
+  "reviews": [],
   "files": [
     "index.html",
     "resources/logo.svg"

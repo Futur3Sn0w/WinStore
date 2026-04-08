@@ -28,6 +28,22 @@
     "allowWide": false,
     "allowLarge": false
   },
+  "screenshots": [
+    "https://support.microsoft.com/images/en-us/5223b4f1-b7cc-4875-98ca-1168820a0b71",
+    "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00MzczNzg2LWhmMTd3Sg?image-dimensions=968x817&revision=16",
+    "https://support.microsoft.com/images/en-us/8bee2b97-7e0a-4a82-b047-59b117bc167d"
+  ],
+  "storeInfo": {
+    "price": "Free",
+    "size": "Varies",
+    "ageRating": "12+",
+    "copyright": "© Microsoft Corporation",
+    "rating": 4.0,
+    "totalRatings": 0,
+    "ratingBreakdown": [],
+    "totalReviews": 0
+  },
+  "reviews": [],
   "appbar": {
     "commands": [
       {
