@@ -29,9 +29,9 @@
     "allowLarge": false
   },
   "screenshots": [
-    "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/665643dd8c7ac752237b5cef_Discord-OG-1200x630.jpg",
-    "https://support.discord.com/hc/user_images/CZC7eAx4_eOMiaH4pAd09Q.jpeg",
-    "https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/670cd3a98dd29d119410e762_Desktop%20-%20Video%20Channel.webp"
+    "resources/screenshots/1.jpg",
+    "resources/screenshots/2.jpeg",
+    "resources/screenshots/3.webp"
   ],
   "storeInfo": {
     "price": "Free",

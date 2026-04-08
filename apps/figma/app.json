@@ -29,10 +29,10 @@
     "allowLarge": false
   },
   "screenshots": [
-    "https://cdn.sanity.io/images/599r6htc/regionalized/e9b3e55d28ec5ea7fa2c4e6153953eda7af36dab-3600x2025.png?w=1632&h=918&q=75&fit=max&auto=format",
-    "https://html.to.design/assets/figma-to-website-add-pages.1fb89a96.webp",
-    "https://cdn.prod.website-files.com/67053868fc01e494462e71c9/67123b30dfd73402db1c2180_64760069e93084646c9eee9a_6240b4979b3af95b2960fd1d_maquette-figma.png",
-    "https://help.figma.com/hc/article_attachments/36480146228759"
+    "resources/screenshots/1.png",
+    "resources/screenshots/2.webp",
+    "resources/screenshots/3.png",
+    "resources/screenshots/4.png"
   ],
   "storeInfo": {
     "price": "Free",

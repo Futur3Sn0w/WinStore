@@ -29,9 +29,9 @@
     "allowLarge": false
   },
   "screenshots": [
-    "https://chromeunboxed.com/wp-content/uploads/2024/06/YouTubeMusicNewLayout.jpg",
-    "https://preview.redd.it/new-youtube-desktop-ui-v0-0kcqwvzj88cb1.jpg?auto=webp&s=b33d27e9ab77d70312d9b3e0b3e8c069a6af511c",
-    "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/03/youtube-music-web-player-redesign-2.jpg?ssl=1"
+    "resources/screenshots/1.jpg",
+    "resources/screenshots/2.jpg",
+    "resources/screenshots/3.jpg"
   ],
   "storeInfo": {
     "price": "Free",

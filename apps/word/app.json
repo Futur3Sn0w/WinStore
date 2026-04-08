@@ -29,9 +29,9 @@
     "allowLarge": false
   },
   "screenshots": [
-    "https://wordfields.com/images/blog/open-online-word-document-in-desktop-word.png",
-    "https://www.lifewire.com/thmb/rLiabvshEkufcc0Ei2_fivo_8TE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/word-online-30593e87cf4b4267998e7728813a7b29.png",
-    "https://b2c-contenthub.com/wp-content/uploads/2023/11/microsoft_word_online_gratis_1.jpg?quality=50&strip=all"
+    "resources/screenshots/1.png",
+    "resources/screenshots/2.png",
+    "resources/screenshots/3.jpg"
   ],
   "storeInfo": {
     "price": "Free",

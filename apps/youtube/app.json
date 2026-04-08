@@ -25,10 +25,10 @@
     "allowLarge": true
   },
   "screenshots": [
-    "https://www.turnoffthelights.com/support/wp-content/uploads/2019/11/capture-youtube-screenshot-thanks-to-turn-off-the-lights-browser-extension-1024x516.png.webp",
-    "https://ux-news.com/content/images/size/w1200/2024/04/YouTube-redesign.jpg.webp",
-    "https://www.androidauthority.com/wp-content/uploads/2025/04/New-upcoming-YouTube_1.jpg",
-    "https://preview.redd.it/youtube-is-testing-new-ui-on-web-player-v0-fwed9808bubf1.png?width=640&crop=smart&auto=webp&s=03aed3cf5dd623451ea71ad4a2676e01d36becc4"
+    "resources/screenshots/1.webp",
+    "resources/screenshots/2.webp",
+    "resources/screenshots/3.jpg",
+    "resources/screenshots/4.png"
   ],
   "storeInfo": {
     "price": "Free",

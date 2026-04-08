@@ -29,9 +29,9 @@
     "allowLarge": false
   },
   "screenshots": [
-    "https://images.ctfassets.net/p762jor363g1/attachment_9f73235f24525145c296cbac87242b61/42a21d3aab4f3a00ebc320f02318bf9e/attachment_9f73235f24525145c296cbac87242b61.jpg",
-    "https://static0.anpoimages.com/wordpress/wp-content/uploads/2023/11/spotify-web-player-chrome-desktop-search.jpg?q=50&fit=crop&w=825&dpr=1.5",
-    "https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2022/06/2022-06-14_11-26-17.png?q=50&fit=crop&w=650&dpr=1.5"
+    "resources/screenshots/1.jpg",
+    "resources/screenshots/2.jpg",
+    "resources/screenshots/3.png"
   ],
   "storeInfo": {
     "price": "Free",

@@ -29,9 +29,9 @@
     "allowLarge": false
   },
   "screenshots": [
-    "https://code.visualstudio.com/assets/blogs/2021/10/20/vscode-dev.png",
-    "https://code.visualstudio.com/assets/docs/setup/vscode-web/remote-repositories.png",
-    "https://learn.microsoft.com/en-us/power-pages/configure/media/visual-studio-code-editor/vscode-file-explorer.png"
+    "resources/screenshots/1.png",
+    "resources/screenshots/2.png",
+    "resources/screenshots/3.png"
   ],
   "storeInfo": {
     "price": "Free",

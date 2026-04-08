@@ -26,9 +26,9 @@
     "partition": "persist:nytgames"
   },
   "screenshots": [
-    "https://pipsnyt.com//data/image/game/pips-nyt-game1.jpg",
-    "https://playpips.app/imgs/pips-puzzle-example-1.png",
-    "https://preview.redd.it/nyt-pips-did-your-intern-design-todays-puzzle-over-lunch-v0-n6flfx40qrxf1.png?auto=webp&s=b0798a70feafde62fca82964c2b12f70452ad2f3"
+    "resources/screenshots/1.jpg",
+    "resources/screenshots/2.png",
+    "resources/screenshots/3.png"
   ],
   "storeInfo": {
     "price": "Free",
